@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFFFA" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center|bottom"
+        android:text="@string/app_name"
+        android:fontFamily="@font/hssff"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:background="#DDFFDD" />
+
+    <Button
+        android:id="@+id/btnQR"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="QR코드"
+        android:textSize="30dp"
+        android:background="#AAFFAA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#DDFFDD">
+
+        <TextView
+            android:id="@+id/tvDecide_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:id="@+id/tvClear_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textColor="#0000ff" />
+
+        <TextView
+            android:id="@+id/tvDeath_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvExam_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#EEFFEE">
+
+        <TextView
+            android:id="@+id/tvState_dt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvState_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="관련 사이트" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnCovid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="코로나19"
+            android:background="#FAFFFA" />
+        <Button
+            android:id="@+id/btnWHO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="세계보건기구"
+            android:background="#FAFFFA" />
+        <Button
+            android:id="@+id/btnKDCA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="질병관리청"
+            android:background="#FAFFFA" />
+    </LinearLayout>
+
+</LinearLayout>
